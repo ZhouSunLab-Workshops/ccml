@@ -1,0 +1,26 @@
+Package: ccml
+Type: Package
+Title: A R Protocol for Consensus Clustering of Multiple Predictive
+        Labels with Different Sample Coverage
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Chuanxing", family = "Li", email = "chuan-xing.li@ki.se", role = c("aut", "cre")),
+  person(given = "Meng", family = "Zhou", email="zhoumeng@wmu.edu.cn", role="aut"))
+Description: Consensus clustering, also called meta-clustering or cluster ensembles has been increasing used in clinical data. Current consensus clustering methods tend to ensemble a number of different clusterings
+    from mathematical replicates with similar sample coverage. As the fact of commonly variety
+    of sample coverage in the real-world data, a new consensus clustering strategy dealing with
+    such biological replicates is required. This is a two-step consensus clustering R package, which
+    is used to input multiple predictive labels with different sample coverage (missing labels).
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.0
+Depends: R (>= 3.5.0)
+Imports: ggplot2, diceR, parallel, tidyr, ConsensusClusterPlus,
+        SNFtool, plyr
+NeedsCompilation: no
+Packaged: 2022-07-18 04:19:09 UTC; Lenovo
+Author: Chuanxing Li [aut, cre],
+  Meng Zhou [aut]
+Maintainer: Chuanxing Li <chuan-xing.li@ki.se>
