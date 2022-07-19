@@ -51,7 +51,7 @@ NULL
 
 ## Functions
 ------------
-* cml     
+* ccml     
 *A two-step consensus clustering inputing multiple predictive labels with different sample coverages (missing labels).*
 
 * callNCW  
@@ -90,16 +90,16 @@ In the repository, we give some examples to show how to run **ccml**.
   title="output"
   ```
   
-* run cml
+* run ccml
    ```r
     # not estimate stability of permutation numbers.
-    res_1=cml(title=title,label=label,nperm = 2,stability=F,maxK=3,pItem=0.8,plot = "pdf")
+    res_1=ccml(title=title,label=label,nperm = 2,stability=F,maxK=3,pItem=0.8,plot = "pdf")
 
     # other methods for clustering of distance matrix
-    res_2<-cml(title=title,label=label,nperm = 10,stability=F,maxK=3,pItem=0.9,plot = "pdf",clusterAlg = "hc")
+    res_2<-ccml(title=title,label=label,nperm = 10,stability=F,maxK=3,pItem=0.9,plot = "pdf",clusterAlg = "hc")
 
     # not output as "rdata"
-    res_3<-cml(title=title,label=label,nperm = 10,stability=F,maxK=3,pItem=0.9,plot = "pdf",output=FALSE)
+    res_3<-ccml(title=title,label=label,nperm = 10,stability=F,maxK=3,pItem=0.9,plot = "pdf",output=FALSE)
 
     # The output is a list.Some examples are as follws
     # get consensusMatrix
