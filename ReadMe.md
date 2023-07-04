@@ -19,9 +19,12 @@ Get the latest released version from CRAN:
 install.packages("ccml")
 ```
 Or from GitHub:
-
 ``` r
-# Download the "ccml_1.2.0.tar.gz" file to your local machine and install locally.
+library(devtools)
+devtools::install_github("ZhouSunLab-Workshops/ccml")
+```
+Or install locally：
+``` r
 install.packages("ccml_1.2.0.tar.gz",repos = NULL, type="source")
 ```
 
@@ -129,26 +132,11 @@ In the repository, we give some examples to show how to run **ccml**.
 * consensus     
   The heatmaps of the consensus matrices(for k= 2, 3, 4),consensus CDF Plot, Delta Area Plot and Tracking Plot are used to determine the best K value of clustering.
   
-
-  <img src="img/k_2.jpg" width="29%">
-  <img src="img/k_3.jpg" width="29%">
-  <img src="img/k_4.jpg" width="29%">
-
-  <img src="img/2.CDF.jpg" width="27%">
-  <img src="img/2_Delta.jpg" width="27%">
-  <img src="img/2_tracking.jpg" width="27%">
-
-
 * icl  
   Item-Consensus Plot show the stability of members.   
-  ![icl](img/3.icl.jpg)   
-  ![icl_2](img/3.icl_2.jpg)
-
   
 * plotCompareCW   
   This plot show the original consensus weights vs. normalized consensus weights grouping by the number of co-appeared percent of clustering(non-missing).The number of duplicates sample are indicated by the size of the colored portion, whose color corresponds to percent of co-appeared of clustering.   
-  ![PCW](img/3.PCW.jpg)
 
 * stability.seed100.n10K   
   The name of plot represents 10*1000 permutation using random numbers with seedn=100.The stability of normalized consensus weight is estimated based on permutation numbers.
-  ![ncw](img/NCW.jpg)
