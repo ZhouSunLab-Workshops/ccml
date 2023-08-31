@@ -25,21 +25,21 @@ devtools::install_github("ZhouSunLab-Workshops/ccml")
 ```
 Or install locally：
 ``` r
-install.packages("ccml_1.2.0.tar.gz",repos = NULL, type="source")
+install.packages("ccml_1.4.0.tar.gz",repos = NULL, type="source")
 ```
 
 ## Setup
 ------------
 This package needs to create a folder to store the result. Let’s call the folder
-`output` and assume the full path to this folder is
-`xxxxx/output`. Run the function below to set the path for the package.
+`result_output` and assume the full path to this folder is
+`xxxxx/result_output`. Run the function below to set the path for the package.
 
 ``` r
 library(ccml)
-setwd("xxxxx/output")
+setwd("xxxxx/result_output")
 ```
 
-Or a folder named "output" will be created under the default path when the program is running.
+Or a folder named "result_output" will be created under the default path when the program is running.
 
 
 
@@ -88,7 +88,7 @@ In the repository, we give some examples to show how to run **ccml**.
 * output directory      
 *This part is mentioned in Setup above.*
   ``` r
-  title="output"
+  title="result_output"
   ```
   
 * run cml
