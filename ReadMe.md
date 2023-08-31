@@ -94,7 +94,7 @@ In the repository, we give some examples to show how to run **ccml**.
 * run cml
    ```r
     # not estimate stability of permutation numbers.
-    res_1=ccml(title=title,label=label,nperm = 3,ncore=1,stability=FALSE,maxK=5,pItem=0.8)
+    res_1<-ccml(title=title,label=label,nperm = 3,ncore=1,stability=FALSE,maxK=5,pItem=0.8)
 
     # other methods for clustering of distance matrix
     res_2<-ccml(title=title,label=label,nperm = 10,ncore=1,stability=TRUE,
